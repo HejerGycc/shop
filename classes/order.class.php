@@ -23,6 +23,7 @@ class Order {
     }
 
 
+
     public function addProduct(Product $product)
     {
         $this->products[] = $product;
