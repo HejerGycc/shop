@@ -3,7 +3,7 @@ class Database{
   
     // specify your own database credentials
     private $host = "localhost";
-    private $db_name = "crud_pdt_cat";
+    private $db_name = "shop";
     private $username = "root";
     private $password = "";
     public $conn;

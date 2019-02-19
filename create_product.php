@@ -1,8 +1,8 @@
 <?php
 // include database and object files
-include_once 'config/database.php';
-include_once 'objects/product.php';
-include_once 'objects/category.php';
+include_once 'config/database.class.php';
+include_once 'classes/product.class.php';
+include_once 'classes/category.class.php';
  
 // get database connection
 $database = new Database();
@@ -18,7 +18,7 @@ include_once "layout_header.php";
  
 // contents is here
 echo "<div class='right-button-margin'>";
-echo "<a href='index.php' class='btn btn-default pull-right'>Read Products</a>";
+echo "<a href='index_product.php' class='btn btn-default pull-right'>Read Products</a>";
 echo "</div>";
 
 ?>

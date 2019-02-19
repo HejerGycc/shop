@@ -3,8 +3,8 @@
 if($_POST){
  
     // include database and object file
-    include_once 'config/database.php';
-    include_once 'objects/product.php';
+    include_once 'config/database.class.php';
+    include_once 'classes/product.class.php';
  
     // get database connection
     $database = new Database();

@@ -3,9 +3,9 @@
 $id = isset($_GET['id']) ? $_GET['id'] : die('ERROR: missing ID.');
  
 // include database and object files
-include_once 'config/database.php';
-include_once 'objects/product.php';
-include_once 'objects/category.php';
+include_once 'config/database.class.php';
+include_once 'classes/product.class.php';
+include_once 'classes/category.class.php';
 
 // set page header
 $page_title = "Update Product";
@@ -13,7 +13,7 @@ include_once "layout_header.php";
  
 // contents is here
 echo "<div class='right-button-margin'>";
-    echo "<a href='index.php' class='btn btn-default pull-right'>Read Products</a>";
+    echo "<a href='index_product.php' class='btn btn-default pull-right'>Read Products</a>";
 echo "</div>";
 
 // get database connection

@@ -9,9 +9,9 @@
     $from_record_num = ($records_per_page * $page) - $records_per_page;
  
 // include database and object files
-include_once 'config/database.php';
-include_once 'objects/product.php';
-include_once 'objects/category.php';
+include_once 'config/database.class.php';
+include_once 'classes/product.class.php';
+include_once 'classes/category.class.php';
  
 // instantiate database and objects
 $database = new Database();
@@ -62,7 +62,7 @@ if($num>0){
                 echo "<td>";
                     // read one, edit and delete button is here
                     // read, edit and delete buttons
-                echo "<a href='read_one.php?id={$id}' class='btn btn-primary left-margin'>
+                echo "<a href='read_one_product.php?id={$id}' class='btn btn-primary left-margin'>
                 <span class='glyphicon glyphicon-list'></span> Read
                 </a>
 
@@ -82,7 +82,7 @@ if($num>0){
     echo "</table>";
  
     // the page where this paging is used
-    $page_url = "index.php?";
+    $page_url = "index_product.php?";
     
     // count all products in the database to calculate total pages
     $total_rows = $product->countAll();
