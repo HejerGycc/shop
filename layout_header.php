@@ -13,11 +13,13 @@
   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- our custom CSS -->
-    <link rel="stylesheet" href="libs/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   
 </head>
 <body>
  
+
+<?php include 'navigation.php'; ?>
     <!-- container -->
     <div class="container">
  

@@ -44,5 +44,6 @@ $(document).on('click', '.delete-object', function(){
     return false;
 });
 </script>
+<script src="js/main.js"></script>
 </body>
 </html>
