@@ -1,6 +1,6 @@
 <?php
 // include classes
-include_once "config/database.php";
+include_once "config/database.class.php";
 include_once "classes/cart_item.php";
  
 // get database connection

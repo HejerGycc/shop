@@ -6,6 +6,8 @@ include 'config/database.class.php';
 include_once "classes/product.class.php";
 //include_once "classes/product_image.php";
 include_once "classes/cart_item.php";
+
+
  
 // get database connection
 $database = new Database();
