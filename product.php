@@ -2,7 +2,7 @@
 // include classes
 include_once "config/database.class.php";
 include_once "classes/product.class.php";
-//include_once "classes/product_image.php";
+include_once "classes/product_image.php";
 include_once "classes/cart_item.php";
  
 // get database connection
@@ -11,7 +11,7 @@ $db = $database->getConnection();
  
 // initialize objects
 $product = new Product($db);
-//$product_image = new ProductImage($db);
+$product_image = new ProductImage($db);
 // get ID of the product to be edited and action
 $id = isset($_GET['id']) ? $_GET['id'] : die('ERROR: missing ID.');
 $action = isset($_GET['action']) ? $_GET['action'] : "";
@@ -78,7 +78,7 @@ echo "<div class='col-md-1'>";
         }
     }else{ echo "No images."; }
 echo "</div>";
- 
+
 
 function readAll($from_record_num, $records_per_page){
  
@@ -96,6 +96,7 @@ function readAll($from_record_num, $records_per_page){
  
     return $stmt;
 }
+
 // include page footer HTML
 include_once 'layout_footer.php';
 ?>

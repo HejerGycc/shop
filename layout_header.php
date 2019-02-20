@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   
     <!-- our custom CSS -->
-    <link rel="stylesheet" href="libs/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   
 </head>
 <body>

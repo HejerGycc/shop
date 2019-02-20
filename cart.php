@@ -4,7 +4,7 @@ include 'config/database.class.php';
  
 // include objects
 include_once "classes/product.class.php";
-//include_once "classes/product_image.php";
+include_once "classes/product_image.php";
 include_once "classes/cart_item.php";
 
 
@@ -15,7 +15,7 @@ $db = $database->getConnection();
  
 // initialize objects
 $product = new Product($db);
-//$product_image = new ProductImage($db);
+$product_image = new ProductImage($db);
 $cart_item = new CartItem($db);
  
 // set page title
