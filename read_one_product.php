@@ -28,8 +28,8 @@ include_once "layout_header.php";
  
 // read products button
 echo "<div class='right-button-margin'>";
-    echo "<a href='index_product.php' class='btn btn-primary pull-right'>";
-        echo "<span class='glyphicon glyphicon-list'></span> Read Products";
+    echo "<a href='products.php' class='btn btn-primary pull-right'>";
+        echo "<span class='glyphicon glyphicon-list'></span> All Products";
     echo "</a>";
 echo "</div>";
 
@@ -60,12 +60,21 @@ echo "<table class='table table-hover table-responsive table-bordered'>";
             echo $category->name;
         echo "</td>";
     echo "</tr>";
+
     echo "<tr>";
         echo "<td>Image</td>";
         echo "<td>";
             echo $product->image ? "<img src='uploads/{$product->image}' style='width:300px;' />" : "No image found.";
         echo "</td>";
     echo "</tr>";
+   
+    echo "<tr>";
+    echo "<td colspan='2'>";
+    echo "<div align='center'><a href='add_to_cart.php?id={$id}' class='btn btn-primary w-100-pct'><i class='fas fa-shopping-cart'></i>  Add to Cart</a></div>";
+    echo "</td>";
+    echo "</tr>";
+
+
  
 echo "</table>";
  

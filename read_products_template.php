@@ -8,7 +8,7 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         // product id for javascript access
         echo "<div class='product-id display-none'>{$id}</div>";
  
-        echo "<a href='product.php?id={$id}' class='product-link'>";
+        echo "<a href='read_one_product.php?id={$id}' class='product-link'>";
             
             /* select and show first product image
             $product_image->product_id=$id;
@@ -49,7 +49,7 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
                      <i class='far fa-hand-point-right'></i>
                     </a><br><br>";*/
 
-                    echo "<a href='add_to_cart.php?id={$id}&page={$page}' class='btn btn-primary w-100-pct'><i class='fas fa-shopping-cart'></i>Add to Cart</a>";
+                    echo "<a href='add_to_cart.php?id={$id}&page={$page}' class='btn btn-primary w-100-pct'><i class='fas fa-shopping-cart'></i>  Add to Cart</a>";
                 }
             echo "</div>";
  
