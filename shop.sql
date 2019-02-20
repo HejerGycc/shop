@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mar. 19 fév. 2019 à 10:17
+-- Généré le :  mer. 20 fév. 2019 à 15:59
 -- Version du serveur :  10.1.36-MariaDB
 -- Version de PHP :  7.2.11
 
@@ -94,10 +94,9 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `im
 (1, 'LG P880 4X HD', 'My first awesome phone!', 336, 3, '3b9f60db62d30dc29875e51ab2a5063ef6b24a36-Phone.jpg', '2014-06-01 01:12:26', '2014-05-31 15:12:26'),
 (2, 'Google Nexus 4', 'The most awesome phone of 2013!', 299, 2, '5cf93c67f5cfada96f8d6be8efc3ae4af606b4ed-Nexus.jpeg', '2014-06-01 01:12:26', '2014-05-31 15:12:26'),
 (3, 'Samsung Galaxy S4', 'How about no?', 600, 3, '1f353f3b6fcbdf172e285d727fe86a7ab9fb6ddc-galaxys4.png', '2014-06-01 01:12:26', '2014-05-31 15:12:26'),
-(6, 'Bench Shirt', 'The best shirt!', 29, 1, '', '2014-06-01 01:12:26', '2014-05-31 00:12:21'),
 (7, 'Lenovo Laptop', 'My business partner.', 399, 2, '	\r\ncbc187ba4360d1b97afa939298b866da84df995a-lenovo.jpg', '2014-06-01 01:13:45', '2014-05-31 00:13:39'),
 (8, 'Samsung Galaxy Tab 10.1', 'Good tablet.', 259, 2, 'cd047f7b7c9cb5ea47c110e578183ffa9cf9d6c2-tab.jpg', '2014-06-01 01:14:13', '2014-05-31 00:14:08'),
-(9, 'Spalding Watch', 'My sports watch.', 199, 1, '', '2014-06-01 01:18:36', '2014-05-31 00:18:31'),
+(9, 'Spalding Watch', 'My sports watch.', 199, 1, '0bc35a429223a9c7b6b8c934ebb6d9fec874d7f4-watch.jpg', '2014-06-01 01:18:36', '2014-05-31 00:18:31'),
 (10, 'Sony Smart Watch', 'The coolest smart watch!', 300, 2, 'b79b6fa85b4322c57dc6e6faf2cab70b36b9b000-smartwatch.jpg', '2014-06-06 17:10:01', '2014-06-05 16:09:51'),
 (13, 'Abercrombie Allen Brook Shirt', 'Cool red shirt!', 70, 1, 'fa580c4991e268e769f932531d82de4e47af8b5d-red.jpg', '2014-06-06 17:12:59', '2014-06-05 16:12:49'),
 (25, 'Abercrombie Allen Anew Shirt', 'Awesome new shirt!', 999, 1, 'c07320f78e9d181a55b2435fa8bde7fb4620dfa5-shirt.jpg', '2014-11-22 18:42:13', '2014-11-21 18:42:13'),
@@ -193,7 +192,7 @@ ALTER TABLE `order_details`
 -- AUTO_INCREMENT pour la table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT pour la table `users`
