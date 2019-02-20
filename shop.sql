@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 20 fév. 2019 à 15:59
+-- Généré le :  mer. 20 fév. 2019 à 16:16
 -- Version du serveur :  10.1.36-MariaDB
 -- Version de PHP :  7.2.11
 
@@ -99,9 +99,9 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `im
 (9, 'Spalding Watch', 'My sports watch.', 199, 1, '0bc35a429223a9c7b6b8c934ebb6d9fec874d7f4-watch.jpg', '2014-06-01 01:18:36', '2014-05-31 00:18:31'),
 (10, 'Sony Smart Watch', 'The coolest smart watch!', 300, 2, 'b79b6fa85b4322c57dc6e6faf2cab70b36b9b000-smartwatch.jpg', '2014-06-06 17:10:01', '2014-06-05 16:09:51'),
 (13, 'Abercrombie Allen Brook Shirt', 'Cool red shirt!', 70, 1, 'fa580c4991e268e769f932531d82de4e47af8b5d-red.jpg', '2014-06-06 17:12:59', '2014-06-05 16:12:49'),
-(25, 'Abercrombie Allen Anew Shirt', 'Awesome new shirt!', 999, 1, 'c07320f78e9d181a55b2435fa8bde7fb4620dfa5-shirt.jpg', '2014-11-22 18:42:13', '2014-11-21 18:42:13'),
+(25, 'Abercrombie Allen Anew Shirt', 'Awesome new shirt!', 999, 1, '	\r\n3f50e1fdc24c0ffde38abc33c0ab96bdb94336c5-1-0-0.jpg', '2014-11-22 18:42:13', '2014-11-21 18:42:13'),
 (27, 'Bag', 'Awesome bag for you!', 999, 1, '36beae65d262a60258792c270d41ae493ea2d40e-Bag.jpg', '2014-12-04 21:11:36', '2014-12-03 21:11:36'),
-(28, 'Wallet', 'You can absolutely use this one!', 799, 1, '	\r\nb77036b154a685bd1c43696176966bd89c3d8357-wallet.jpg', '2014-12-04 21:12:03', '2014-12-03 21:12:03'),
+(28, 'Wallet', 'You can absolutely use this one!', 799, 1, '84e70c6736af62d877557f9b52b3a1a550d4404d-wallet.jpg', '2014-12-04 21:12:03', '2014-12-03 21:12:03'),
 (30, 'Wal-mart Shirt', 'Wal-mart Shirt ', 555, 2, 'f0c35d239c2360d3080863aaf9b8dca16ea0813e-walmart.jpg', '2014-12-13 00:52:29', '2014-12-12 00:52:29'),
 (31, 'Amanda Waller Shirt', 'New awesome shirt!', 333, 1, 'bc4095d9ece210e8e9c6f349490c98e024757d10-wallmart.jpg', '2014-12-13 00:52:54', '2014-12-12 00:52:54');
 
@@ -192,7 +192,7 @@ ALTER TABLE `order_details`
 -- AUTO_INCREMENT pour la table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
 -- AUTO_INCREMENT pour la table `users`
