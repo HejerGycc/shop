@@ -16,3 +16,8 @@
 .modal-footer{
     text-align: center !important;
 }
+
+#homeTable{
+    width: 50% !important;
+    margin:auto !important; 
+}

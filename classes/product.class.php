@@ -55,8 +55,7 @@ class Product{
     //List of products with pagination
     function readAll($from_record_num, $records_per_page){
  
-        $query = "SELECT
-                    id, name, description, price, category_id
+        $query = "SELECT *
                 FROM
                     " . $this->table_name . "
                 ORDER BY
