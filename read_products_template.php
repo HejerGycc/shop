@@ -9,7 +9,8 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         echo "<div class='product-id display-none'>{$id}</div>";
  
         echo "<a href='product.php?id={$id}' class='product-link'>";
-            // select and show first product image
+            
+            /* select and show first product image
             $product_image->product_id=$id;
             $stmt_product_image=$product_image->readFirst();
  
@@ -17,7 +18,10 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
                 echo "<div class='m-b-10px'>";
                     echo "<img src='uploads/images/{$row_product_image['name']}' class='w-100-pct' />";
                 echo "</div>";
-            }
+            }*/
+
+            // product image
+            echo $image ? "<div><img src='uploads/{$image}' style='width:300px;' /></div>" : "No image found.";
  
             // product name
             echo "<div class='product-name m-b-10px'>{$name}</div>";
@@ -40,7 +44,12 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
                         echo "Update Cart";
                     echo "</a>";
                 }else{
-                    echo "<a href='add_to_cart.php?id={$id}&page={$page}' class='btn btn-primary w-100-pct'>Add to Cart</a>";
+
+                    /*echo "<a href='read_one_product.php?id={$id}' class='btn btn-primary right-margin'>
+                     <i class='far fa-hand-point-right'></i>
+                    </a><br><br>";*/
+
+                    echo "<a href='add_to_cart.php?id={$id}&page={$page}' class='btn btn-primary w-100-pct'><i class='fas fa-shopping-cart'></i>Add to Cart</a>";
                 }
             echo "</div>";
  

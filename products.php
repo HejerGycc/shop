@@ -25,7 +25,7 @@ $records_per_page = 6; // set records or rows of data per page
 $from_record_num = ($records_per_page * $page) - $records_per_page; // calculate for the query LIMIT clause
 
 // read all products in the database
-$stmt=$product->read($from_record_num, $records_per_page);
+$stmt=$product->readAll($from_record_num, $records_per_page);
  
 // count number of retrieved products
 $num = $stmt->rowCount();
